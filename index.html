@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body {
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 80%;
+        }
+        body a {text-decoration: none;}
+
+        .container {
+            /* border: 1px lightgrey solid; */
+            max-width: 24rem;
+            min-width: max-content;
+            margin: 5% auto 0 auto;
+            padding: 0;
+            text-align: center;
+        }
+        .container2 {
+            border: 1px lightgrey solid;
+            max-width: 24rem;
+            min-width: max-content;
+            margin: 0 auto 0 auto;
+            padding: 0rem 0rem 0rem 1rem;
+            text-align: left;
+        }
+        .container2 h1 {margin: .5rem; font-weight: normal;}
+        .button {width: 95%; margin: 1rem 0rem; padding: .4rem; border-radius: 3px;}
+        .button2 {width: 95%; margin: 0rem 0rem; padding: .4rem; border-radius: 3px;}
+        .color1 {background-color: rgba(251, 198, 101, 0.912);}
+        ul {margin: 1.5rem 0;}
+/* Header 3 is being used as a solution for placing Horizontal Rules on centered text. 
+Specifically for the line "New to Amazon?" */
+        h3 {
+        display: flex;
+        flex-direction: row;
+        font-weight: normal;
+        margin: 1rem 0 -1rem 0;
+        padding: 0;
+        }
+        h3:before, h3:after{
+        content: "";
+        flex: 1 1;
+        border-bottom: 1px solid;
+        margin: auto;
+        }
+        h3:before {
+        margin-right: 10px
+        }
+        h3:after {
+        margin-left: 10px
+        }
+/* End of H3 Solution for placing Horizontal Rules on Centered Text */
+
+        .space {margin: 2rem 0 2rem 0;}
+        .space2 {margin: 1rem 0 1rem 0;}
+        .positioning {float: right; margin-right: 2rem;}
+        footer {text-align: center; padding-top: 2rem;}
+        footer a {margin:1rem;}
+        footer p {margin-top: 2rem;}
+
+    </style>
+    <title>Amazon Replica</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container2">
+            <h1>Sign In</h1>
+
+            <label for="email">Email(phone or mobile accounts)</label><br>
+            <input class="space2" type="email" id="email" name="email" placeholder="Enter Email" style="width: 93%" value=""><br>
+            <div>
+                <label for="password">Password</label>
+                <a class="positioning" href="#password">Forgot Password</a>
+            </div>
+            <input class="space2" type="password" id="password" name="password" placeholder="Enter Password" style="width: 93%" value="">
+
+            <button class="button color1">Continue</button>
+
+            <ul>
+                <li><a href="#needhelp">Need Help?</a></li>
+            </ul>
+        </div>
+        <h3>New to Amazon?</h3>
+        <button class="button2 space">Create Your Amazon Account</button>        
+    </div>
+    <hr>
+    <footer>
+        <a href="#conditions">Conditions of Use</a>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#help">Help</a>
+
+        <p>©1996-2020, Amazon.com, inc or it's affiliates</p>
+    </footer>
+</body>
+</html>
